@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primaryColor: hsl(14,90%,53%);  //color code (0 to 360 wheel),  intensity or purity, light or Dark
+    --primaryColorLight: hsl(14,96%,91%);
+    --bgcolor: hsl(0,0%,100%);
+    --formColor: hsl(20,42%,87%);
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(0,0%,18%);
+    --greyText: hsl(0,0%,51%);
+    --inputColor: hsl(330,12%,97%);
+    --cardColor: hsl(300,3%,94%);
+
+    // Font ang typography
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+    
+}
+.arrowControls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    color: var(--primaryColor);
+    cursor: pointer;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .arrow:hover {
+    background: hsl(14,90%,53%);
+    color: white;
+  }
+  
+  .leftArrow {
+    margin-left: 1rem;
+  }
+  
+  .rightArrow {
+    margin-right: 1rem;
+  }
+  
+.Home
+{
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+}
+.videoBg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.secText
+{
+    position: absolute;
+    height: 100%;
+    top: 30%;
+    bottom: 50%;
+    color: var(--whiteColor);
+    padding: 0 1.3rem;
+
+    h1{
+        font-size: var(--biggestFontSize);
+        font-weight: 900;
+    }
+    p{
+        padding: 1rem 0;
+        font-size: var(--normalFontSize);
+        font-weight: 500;
+    }
+    .btn
+    {
+        gap: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: var(--h3FontSize);
+        font-weight: bolder;
+    }
+}
+.popularPlaces
+{
+    display: none;
+}
+
+@media screen and (min-width: 480px)
+{
+    .Home{
+        .secText{
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        p{
+            padding: 1rem 0;
+            font-size: var(--h2FontSize);
+            max-width: 70%;
+            margin: auto;
+        }
+        .btn{
+            font-size: var(--h3FontSize);
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 769px){
+
+    .Home{
+        .secText{
+            width: 100%;
+
+            h1{
+                font-size: 4rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+            }
+
+            p{
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+
+            .btn{
+                gap: .5rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                font-size: var(--h3FontSize);
+                margin: auto;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1040px){
+    .Home{
+        position: relative;
+
+        .secText{
+            
+
+            h1{
+                font-size: 3.2rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+            }
+
+          
+        }
+        .popularPlaces{
+            display: block;
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            h3{
+                color: white;
+                padding: 1rem 0;
+                position: relative;
+    
+                &::after{
+                    content: '';
+                    width: 84%;
+                    height: 2px;
+                    background: rgb(202, 202, 202);
+                    right: 0;
+                    bottom: 25px;
+                    position: absolute;
+                }
+            }
+
+            .images{
+                align-items: center;
+
+                img{
+                    height: 100px;
+                    width: 210px;
+                    object-fit: cover;
+                    border-image-repeat: 10px;
+                    border-radius: .9rem;
+                    padding: .2rem;
+                    margin: 0 .5rem ;
+                    border: .1rem solid hsl(0, 0%, 100%);
+                }
+            }
+        }
+        
+    }
+    
+}

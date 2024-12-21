@@ -1,0 +1,97 @@
+:root {
+  --primaryColor: hsl(14,90%,53%);
+  --primaryColorLight: hsl(14,96%,91%);
+  --bgcolor: hsl(0,0%,100%);
+  --formColor: hsl(20,42%,87%);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(0,0%,18%);
+  --greyText: hsl(0,0%,51%);
+  --inputColor: hsl(330,12%,97%);
+  --cardColor: hsla(300, 10%, 88%, 0.695);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.subscribe .secContainer img {
+  height: 400px;
+  width: 400px;
+  -o-object-position: centers;
+     object-position: centers;
+}
+.subscribe .secContainer .textDiv h4 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+}
+.subscribe .secContainer .textDiv p {
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe .secContainer img {
+    height: 300px;
+    width: 300px;
+    -o-object-position: centers;
+       object-position: centers;
+  }
+  .subscribe .secContainer .textDiv h4 {
+    font-size: var(--h2FontSize);
+    color: var(--blackColor);
+  }
+  .subscribe .secContainer .textDiv p {
+    padding: 1rem 0;
+  }
+  .subscribe .secContainer .textDiv .btn {
+    font-size: var(--h3FontSize);
+    font-weight: 400;
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .subscribe .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subscribe .secContainer img {
+    height: 400px;
+    width: 400px;
+    -o-object-position: centers;
+       object-position: centers;
+  }
+  .subscribe .secContainer .textDiv h4 {
+    font-size: 3rem;
+    color: var(--blackColor);
+  }
+  .subscribe .secContainer .textDiv p {
+    font-size: var(--normalFontSize);
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .subscribe .secContainer {
+    gap: 2rem;
+  }
+  .subscribe .secContainer img {
+    height: 400px;
+    width: 400px;
+    -o-object-position: centers;
+       object-position: centers;
+  }
+  .subscribe .secContainer .textDiv h4 {
+    font-size: 4rem;
+    color: var(--blackColor);
+  }
+  .subscribe .secContainer .textDiv p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .subscribe .secContainer .textDiv .btn {
+    font-size: var(--h2FontSize);
+    font-weight: 500;
+    padding: 1.2rem;
+  }
+}/*# sourceMappingURL=Subscribe.css.map */

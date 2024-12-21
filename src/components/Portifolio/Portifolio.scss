@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primaryColor: hsl(14,90%,53%);  //color code (0 to 360 wheel),  intensity or purity, light or Dark
+    --primaryColorLight: hsl(14,96%,91%);
+    --bgcolor: hsl(0,0%,100%);
+    --formColor: hsl(20,42%,87%);
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(0,0%,18%);
+    --greyText: hsl(0,0%,51%);
+    --inputColor: hsl(330,12%,97%);
+    --cardColor: hsl(300,3%,94%);
+
+    // Font ang typography
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+    
+}
+
+
+        #imgFill{
+        filter: invert(100%);
+        }
+        
+        
+
+    .portofolio{
+        .secContainer{
+            gap: 2rem;
+
+            .leftContent{
+
+                .grid{
+                    .singlePortofolio{
+                        gap: 1rem;
+                        align-items: flex-start;
+
+                        .iconDiv{
+
+                            img{
+                                height: 80px;
+                                width: 80px;
+                                padding-right: 10px;
+                            }
+                        }
+                   
+
+                    .infor{
+                        h4{
+                            padding-bottom: .5rem;
+                        }
+                    }
+                }
+                }
+            }
+            // .rightContent
+            // {
+            //     img{
+            //         height: 400px;
+            //         width: 350px;
+                    
+            //     }
+            // }
+
+           
+        }
+    }
+    
+    //media query
+
+    @media screen and (min-width: 480px) {
+        .portofolio{
+            .secContainer{
+                grid-template-columns: repeat(1,1fr);
+                .leftContent{
+                    .secHeading{
+                        h3{
+                            font-size: var(--h2FontSize);
+                        }
+                        p{
+                            font-size: var(--normalFontSize);
+                            padding: .5rem 0;
+                        }
+                    }
+
+                    .grid{
+                        .singlePortofolio{
+                            gap: 1.5rem;
+
+                           .infor{
+                            h4{
+                                padding-bottom: .5rem;
+                                font-size: var(--h3FontSize);
+
+                            }
+                            p{
+                                font-size: var(--normalFontSize);
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: 660px){
+            .portofolio{
+                .secContainer{
+                    .leftContent{
+                        .secHeading{
+                            h3{
+                                font-size: 2rem;
+                            }
+                            p{
+                                font-size: var(--h3FontSize);
+                            }
+                        }
+
+                        .grid{
+                            grid-template-columns: repeat(2,1fr);
+                            .singlePortofolio{
+                                gap: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .rightContent{
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img{
+                            margin: auto;
+                            max-width: 80%;
+                        }
+                    }
+                }
+            }
+    }
+
+    @media screen and (min-width: 820px){
+        .portofolio{
+            .secContainer{
+                grid-template-columns: repeat(2,1fr);
+                .leftContent{
+                    .secHeading{
+                        h3{
+                            font-size: var(--h2FontSize);
+                        }
+                        p{
+                            font-size: var(--h3FontSize);
+                        }
+                    }
+
+                    .grid{
+                        grid-template-columns: repeat(1,1fr);
+                        .singlePortofolio{
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+
+                .rightContent{
+                    
+
+                    img{
+                        
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 1240px){
+    .portofolio{
+        .secContainer{
+                gap: 3rem;
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: var(--h3FontSize);
+                    }
+                }
+
+                .grid{
+                    gap: 2.5rem;
+                    margin-top: 3rem;
+                    .singlePortofolio{
+                        gap: 2rem;
+                    }
+                }
+            }
+
+          
+        }
+    }
+}

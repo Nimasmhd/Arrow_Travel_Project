@@ -1,0 +1,128 @@
+:root {
+  --primaryColor: hsl(14,90%,53%);
+  --primaryColorLight: hsl(14,96%,91%);
+  --bgcolor: hsl(0,0%,100%);
+  --formColor: hsl(20,42%,87%);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(0,0%,18%);
+  --greyText: hsl(0,0%,51%);
+  --inputColor: hsl(330,12%,97%);
+  --cardColor: hsl(300,3%,94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.review .secContainer .textDiv .redText {
+  font-size: var(--smallFontSize);
+  display: block;
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+.review .secContainer .textDiv h3 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  padding: 1rem 0;
+}
+.review .secContainer .textDiv p {
+  color: var(--blackColor);
+}
+.review .secContainer .textDiv .star {
+  gap: 0.4rem;
+  padding: 1rem 0;
+}
+.review .secContainer .textDiv .star .icon {
+  color: var(--primaryColor);
+  font-size: var(--h3FontSize);
+}
+.review .secContainer .textDiv .clientsImages {
+  gap: 1rem;
+}
+.review .secContainer .textDiv .clientsImages img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--whiteColor);
+  box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+}
+
+@media screen and (min-width: 480px) {
+  .review .secContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: 20px;
+    color: black;
+  }
+  .review .secContainer .textDiv p {
+    color: black;
+  }
+  .review .secContainer .textDiv .star .icon {
+    font-size: var(--h2FontSize);
+  }
+  .review .secContainer .textDiv .clientsImages img {
+    height: 50px;
+    width: 50px;
+  }
+  .review .secContainer .imgDiv {
+    height: 250px;
+    width: 100%;
+  }
+  .review .secContainer .imgDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .review .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: 20px;
+  }
+  .review .secContainer .textDiv p {
+    color: black;
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv .star .icon {
+    font-size: var(--h2FontSize);
+  }
+  .review .secContainer .textDiv .clientsImages img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .review .secContainer {
+    gap: 3rem;
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: var(--h3FontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: var(--h1FontSize);
+    color: black;
+  }
+  .review .secContainer .textDiv p {
+    color: black;
+    font-size: var(--h3FontSize);
+    line-height: 2rem;
+  }
+  .review .secContainer .textDiv .imgDiv {
+    height: 300px;
+  }
+}/*# sourceMappingURL=Reviews.css.map */
